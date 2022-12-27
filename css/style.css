@@ -6,7 +6,8 @@
 
 .banner{
     background-color: blue;
-    height: 100vh;
+    height: 80vh;
+    min-height: 600px;
     background-image: url(/images/desktop/image-header.jpg);
     background-position: center bottom;
     background-size: cover;
@@ -32,6 +33,11 @@
 
 .menu span{
     margin-right: 30px;
+    cursor: pointer;
+}
+
+.menu span:hover{
+    color: antiquewhite;
 }
 
 .contact{
@@ -54,7 +60,7 @@
     align-items: center;
     justify-content: center;
     font-size: 70px;
-    flex-grow: 1;
+    flex-grow: 0.4;
     color: white;
     font-weight: bold;
 }
@@ -67,3 +73,51 @@
     text-transform: uppercase;
     
 }
+
+.section1{
+    display: flex;
+    height: 350px;
+}
+
+.section1 .egg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section1 .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 .text-container{
+    width: 70%;
+}
+
+.left h1{
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.left p{
+    color:rgb(124, 124, 124);
+    line-height: 1.4;
+    margin-bottom: 16px;
+
+}
+
+.left .button{
+    display: flex;
+    align-items: center;
+
+}
+
+.left img{
+    width: 120px;
+}
+
+.left, .right{
+    flex: 1;
+}
+
